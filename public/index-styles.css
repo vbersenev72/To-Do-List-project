@@ -1,0 +1,54 @@
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+    color: black;
+}
+
+
+button {
+    padding: 5px;
+
+    font-size: 14px;
+    font-family: Roboto, sans-serif;
+    width: 100%;
+    border-radius: 15px;
+
+    border: none;
+
+}
+
+
+
+
+.Header {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+
+
+
+input {
+    padding: 5px;
+    width: 100%;
+}
+
+
+
+.AddTask {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.Task {
+    margin: 10px;
+    border-bottom: solid black;
+    border-top: solid black;
+
+    padding: 8px;
+    text-align: center;
+}
