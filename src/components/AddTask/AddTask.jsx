@@ -4,9 +4,8 @@ import { useState } from "react"
 
 function AddTask({ todo, setTodo }) {
 
-    const [title, setTitle] = useState("");
-    const [body, setBody] = useState("");
-
+    const [title, setTitle] = useState('');
+    const [body, setBody] = useState('');
 
 
 
@@ -14,13 +13,19 @@ function AddTask({ todo, setTodo }) {
     const AddNewPost = (e) => {
         e.preventDefault()
 
-        setTodo([...todo, {
-            id: Date.now(),
-            title: title,
-            body: body,
-            status: true
-        }])
-
+        if(title == ''){
+            alert("please, input title")
+        } else if(body == ''){
+            alert("please, input description")
+        } else{
+            setTodo([...todo, {
+                id: Date.now(),
+                title: title,
+                body: body,
+                status: true
+            }])
+        }
+        
     };
 
     return (
